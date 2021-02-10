@@ -2,8 +2,8 @@ import { Config } from "protractor";
 
 export let config: Config = {
     // The address of a running selenium server.
-    //seleniumAddress: 'http://localhost:4444/wd/hub',
-    directConnect: true,
+    seleniumAddress: 'http://localhost:4444/wd/hub',
+    // directConnect: true,
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
 
@@ -17,7 +17,7 @@ export let config: Config = {
     // They may include glob patterns.
     // specs: ['test-spec.js'],
 
-    specs: ['../features/demo.feature'],
+    specs: ['../features/bluenile.feature'],
     cucumberOpts: {
         require: [
             './stepDefinitions/*.js'

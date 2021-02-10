@@ -11,8 +11,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const cucumber_1 = require("cucumber");
 const calculator_1 = require("../PageObjects/calculator");
+const homePage_1 = require("../PageObjects/homePage");
 const protractor_1 = require("protractor");
+var expect = require('chai').expect;
 let calc = new calculator_1.calculator();
+let home = new homePage_1.HomePage();
 cucumber_1.Given('I navigate to calculator angularjs website', () => __awaiter(void 0, void 0, void 0, function* () {
     yield protractor_1.browser.get('http://juliemr.github.io/protractor-demo/');
 }));
@@ -21,8 +24,24 @@ cucumber_1.When('I enter {string} and {string}', (string, string2) => __awaiter(
     yield calc.secondEditBox.sendKeys(string2);
     yield calc.calcButton.click();
 }));
-cucumber_1.Then('The total should be {string}', (int) => __awaiter(void 0, void 0, void 0, function* () {
+cucumber_1.Then('The total should be {string}', (string) => __awaiter(void 0, void 0, void 0, function* () {
     let myText = yield calc.getResult.getText();
-    console.log(myText + int);
+    expect(myText).to.equal(string);
 }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RlcHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zdGVwRGVmaW5pdGlvbnMvc3RlcHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSx1Q0FBNkM7QUFDN0MsMERBQXVEO0FBQ3ZELDJDQUFpRDtBQUdqRCxJQUFJLElBQUksR0FBRyxJQUFJLHVCQUFVLEVBQUUsQ0FBQztBQUU1QixnQkFBSyxDQUFDLDRDQUE0QyxFQUFFLEdBQVMsRUFBRTtJQUMzRCxNQUFNLG9CQUFPLENBQUMsR0FBRyxDQUFDLDJDQUEyQyxDQUFDLENBQUM7QUFFbkUsQ0FBQyxDQUFBLENBQUMsQ0FBQztBQUVILGVBQUksQ0FBQywrQkFBK0IsRUFBRSxDQUFPLE1BQU0sRUFBRSxPQUFPLEVBQUUsRUFBRTtJQUM1RCxNQUFNLElBQUksQ0FBQyxZQUFZLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3pDLE1BQU0sSUFBSSxDQUFDLGFBQWEsQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDM0MsTUFBTSxJQUFJLENBQUMsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO0FBRWxDLENBQUMsQ0FBQSxDQUFDLENBQUM7QUFFSCxlQUFJLENBQUMsOEJBQThCLEVBQUUsQ0FBTyxHQUFHLEVBQUUsRUFBRTtJQUMvQyxJQUFJLE1BQU0sR0FBRyxNQUFNLElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxFQUFFLENBQUM7SUFDNUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxNQUFNLEdBQUcsR0FBRyxDQUFDLENBQUM7QUFDOUIsQ0FBQyxDQUFBLENBQUMsQ0FBQyJ9
+//****Blue Nile****\\
+cucumber_1.Given('I navigate to Blue Nile homepage', () => __awaiter(void 0, void 0, void 0, function* () {
+    protractor_1.browser.ignoreSynchronization = true;
+    yield protractor_1.browser.get('https://www.bluenile.com');
+    protractor_1.browser.sleep(3000);
+    yield protractor_1.element(protractor_1.by.css(`div.icon-component.close`)).click(); //closes first modal on load
+}));
+cucumber_1.When('I select {string} in {string}', (string, string2) => __awaiter(void 0, void 0, void 0, function* () {
+    yield home.diamonds.click();
+    yield home.roundShape.click();
+}));
+cucumber_1.Then('I should see the {string} landing page', (string) => __awaiter(void 0, void 0, void 0, function* () {
+    // await element(by.css(`div.icon-component.close`)).click(); //closes modal on diamonds - round
+    let text = yield protractor_1.element(protractor_1.by.xpath(`//span[text() = 'Round Cut Diamonds']`)).getText();
+    expect(text).to.equal('Round Cut Diamonds');
+}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RlcHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zdGVwRGVmaW5pdGlvbnMvc3RlcHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSx1Q0FBNkM7QUFDN0MsMERBQXVEO0FBQ3ZELHNEQUFtRDtBQUNuRCwyQ0FBa0Q7QUFFbEQsSUFBSSxNQUFNLEdBQUcsT0FBTyxDQUFDLE1BQU0sQ0FBQyxDQUFDLE1BQU0sQ0FBQztBQUdwQyxJQUFJLElBQUksR0FBRyxJQUFJLHVCQUFVLEVBQUUsQ0FBQztBQUM1QixJQUFJLElBQUksR0FBRyxJQUFJLG1CQUFRLEVBQUUsQ0FBQztBQUUxQixnQkFBSyxDQUFDLDRDQUE0QyxFQUFFLEdBQVMsRUFBRTtJQUMzRCxNQUFNLG9CQUFPLENBQUMsR0FBRyxDQUFDLDJDQUEyQyxDQUFDLENBQUM7QUFHbkUsQ0FBQyxDQUFBLENBQUMsQ0FBQztBQUVILGVBQUksQ0FBQywrQkFBK0IsRUFBRSxDQUFPLE1BQU0sRUFBRSxPQUFPLEVBQUUsRUFBRTtJQUM1RCxNQUFNLElBQUksQ0FBQyxZQUFZLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3pDLE1BQU0sSUFBSSxDQUFDLGFBQWEsQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDM0MsTUFBTSxJQUFJLENBQUMsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO0FBRWxDLENBQUMsQ0FBQSxDQUFDLENBQUM7QUFFSCxlQUFJLENBQUMsOEJBQThCLEVBQUUsQ0FBTyxNQUFNLEVBQUUsRUFBRTtJQUNsRCxJQUFJLE1BQU0sR0FBRyxNQUFNLElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxFQUFFLENBQUM7SUFDNUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLENBQUM7QUFDcEMsQ0FBQyxDQUFBLENBQUMsQ0FBQztBQUVILHFCQUFxQjtBQUNyQixnQkFBSyxDQUFFLGtDQUFrQyxFQUFFLEdBQU8sRUFBRTtJQUNoRCxvQkFBTyxDQUFDLHFCQUFxQixHQUFHLElBQUksQ0FBQztJQUNyQyxNQUFNLG9CQUFPLENBQUMsR0FBRyxDQUFDLDBCQUEwQixDQUFDLENBQUM7SUFDOUMsb0JBQU8sQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDcEIsTUFBTSxvQkFBTyxDQUFDLGVBQUUsQ0FBQyxHQUFHLENBQUMsMEJBQTBCLENBQUMsQ0FBQyxDQUFDLEtBQUssRUFBRSxDQUFDLENBQUMsNEJBQTRCO0FBQzNGLENBQUMsQ0FBQSxDQUFDLENBQUE7QUFFRixlQUFJLENBQUUsK0JBQStCLEVBQUUsQ0FBTSxNQUFNLEVBQUUsT0FBTyxFQUFDLEVBQUU7SUFDM0QsTUFBTSxJQUFJLENBQUMsUUFBUSxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzVCLE1BQU0sSUFBSSxDQUFDLFVBQVUsQ0FBQyxLQUFLLEVBQUUsQ0FBQztBQUVsQyxDQUFDLENBQUEsQ0FBQyxDQUFBO0FBRUYsZUFBSSxDQUFFLHdDQUF3QyxFQUFFLENBQU0sTUFBTSxFQUFDLEVBQUU7SUFDM0QsZ0dBQWdHO0lBQ2hHLElBQUksSUFBSSxHQUFHLE1BQU0sb0JBQU8sQ0FBQyxlQUFFLENBQUMsS0FBSyxDQUFDLHVDQUF1QyxDQUFDLENBQUMsQ0FBQyxPQUFPLEVBQUUsQ0FBQztJQUN0RixNQUFNLENBQUMsSUFBSSxDQUFDLENBQUMsRUFBRSxDQUFDLEtBQUssQ0FBQyxvQkFBb0IsQ0FBQyxDQUFDO0FBQ2hELENBQUMsQ0FBQSxDQUFDLENBQUMifQ==
