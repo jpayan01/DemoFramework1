@@ -31,7 +31,9 @@ Then('The total should be {string}', async (string) => {
 Given ('I navigate to Blue Nile homepage', async()=> {
     browser.ignoreSynchronization = true;
     await browser.get('https://www.bluenile.com');
+    await browser.manage().window().maximize();
     browser.sleep(3000);
+
     await element(by.css(`div.icon-component.close`)).click(); //closes first modal on load
 })
 
