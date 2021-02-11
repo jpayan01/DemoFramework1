@@ -34,17 +34,20 @@ Given ('I navigate to Blue Nile homepage', async()=> {
     await browser.manage().window().maximize();
     browser.sleep(3000);
 
-    await element(by.css(`div.icon-component.close`)).click(); //closes first modal on load
+    await element(by.css('div.icon-component.close')).click();
+
 })
 
 When ('I select {string} in {string}', async(string, string2)=> {
-    await home.diamonds.click();
-    await home.roundShape.click();
+    // await home.diamonds.click();
+    // await home.roundShape.click();
+    await element(by.xpath(`//span[text()= "${string}"]`)).click();
+    await element(by.xpath(`//span[text()= "${string2}"]`)).click();
 
 })
 
 Then ('I should see the {string} landing page', async(string)=> {
     // await element(by.css(`div.icon-component.close`)).click(); //closes modal on diamonds - round
-    let text = await element(by.xpath(`//span[text() = 'Round Cut Diamonds']`)).getText();
-    expect(text).to.equal('Round Cut Diamonds');
+    let text = await element(by.xpath(`//span[text() = "${string}"]`)).getText();
+    expect(text).to.equal(string);
 });

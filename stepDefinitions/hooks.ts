@@ -1,8 +1,10 @@
 import {Before, After} from "cucumber";
+import { browser } from "protractor";
 
 //SAMPLE HOOKS NOTATION FROM OFFICIAL DOCUMENTATION - FOR DEMO PURPOSES
-Before(function () {
+Before(async function () {
     // This hook will be executed before all scenarios
+    await browser.manage().deleteAllCookies();
   });
   
 // Before({tags: "@foo"}, function () {

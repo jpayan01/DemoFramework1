@@ -3,7 +3,7 @@ import { Config } from "protractor";
 export let config: Config = {
     // The address of a running selenium server.
     //seleniumAddress: 'http://localhost:4444/wd/hub',
-    directConnect: true,
+    // directConnect: true,
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
