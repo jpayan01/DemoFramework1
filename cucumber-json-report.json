@@ -5,7 +5,7 @@
     "line": 1,
     "id": "demo-bdd-implemantation-for-blue-nile",
     "tags": [],
-    "uri": "features\\bluenile.feature",
+    "uri": "features\\e2e\\bluenile.feature",
     "elements": [
       {
         "id": "demo-bdd-implemantation-for-blue-nile;navigate-to-blue-nile-multiple-jewerly-landing-pages",
@@ -23,7 +23,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 52000000
             }
           },
           {
@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5787000000
+              "duration": 10434000000
             }
           },
           {
@@ -49,7 +49,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2326000000
+              "duration": 2096000000
             }
           },
           {
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1457000000
+              "duration": 1679000000
             }
           },
           {
@@ -72,8 +72,7 @@
               "location": "stepDefinitions\\hooks.ts:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -84,7 +83,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           }
         ]
@@ -105,7 +104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 313000000
+              "duration": 722000000
             }
           },
           {
@@ -118,7 +117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5113000000
+              "duration": 6423000000
             }
           },
           {
@@ -131,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1828000000
+              "duration": 2458000000
             }
           },
           {
@@ -144,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 850000000
+              "duration": 1327000000
             }
           },
           {
@@ -154,8 +153,7 @@
               "location": "stepDefinitions\\hooks.ts:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -165,8 +163,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -187,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 567000000
+              "duration": 835000000
             }
           },
           {
@@ -200,20 +197,21 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5412000000
+              "duration": 5276000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "I select \"Diamonds\" in \"Cushion\"",
+            "name": "I select \"Diamonds\" in \"Cushion1\"",
             "match": {
               "location": "stepDefinitions\\steps.ts:41"
             },
             "result": {
-              "status": "passed",
-              "duration": 1883000000
+              "status": "failed",
+              "duration": 391000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(xpath, //span[text()= \"Cushion1\"])\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:831:22)\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\stepDefinitions\\steps.ts:45:61\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\JSFiles\\stepDefinitions\\steps.js:5:58)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -225,8 +223,7 @@
               "location": "stepDefinitions\\steps.ts:49"
             },
             "result": {
-              "status": "passed",
-              "duration": 919000000
+              "status": "skipped"
             }
           },
           {

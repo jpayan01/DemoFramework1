@@ -13,7 +13,7 @@ export let config: Config = {
     capabilities: {
         browserName: 'chrome'
     },
-    specs: ['../features/bluenile.feature'],
+    specs: ['../features/e2e/bluenile.feature'],
     cucumberOpts: {
         format: 'json:./cucumber-json-report.json',
 

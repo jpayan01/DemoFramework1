@@ -1,4 +1,4 @@
-Feature: Demo BDD implemantation for Blue Nile 
+Feature: Blue Nile Demo for BDD implemantation 
 
 # Scenario: Navigate to blue nile Diamond page
 #     Given I navigate to Blue Nile homepage
@@ -14,5 +14,5 @@ Examples:
     | Type      | Shape     | Label |
     | Diamonds  | Round     | Round Cut Diamonds  |
     | Diamonds  | Princess  | Princess Cut Diamonds|
-    | Diamonds  | Cushion   | Cushion Cut Diamonds|
+    | Diamonds  | Cushion1   | Cushion Cut Diamonds|
     
