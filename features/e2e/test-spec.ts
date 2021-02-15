@@ -1,5 +1,5 @@
 import { browser, element, by } from "protractor"
-import { calculator } from "./PageObjects/calculator";
+import { calculator } from "../../PageObjects/calculator";
 
 describe('chain locators demo', () => {
     it('Open Angular js website', async () => {
