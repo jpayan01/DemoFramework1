@@ -1,9 +1,9 @@
-Feature: Blue Nile Demo for BDD implemantation 
+Feature: Blue Nile HompePage Demo 
 
-# Scenario: Navigate to blue nile Diamond page
-#     Given I navigate to Blue Nile homepage
-#     When I select "round" in "Diamonds"
-#     Then I should see the "Diamonds" landing page
+Scenario: Navigate to blue nile Diamond page
+    Given I navigate to Blue Nile homepage
+    When I select "Diamonds" in "Round"
+    Then I should see the "Round Cut Diamonds" landing page
 
 Scenario Outline: Navigate to blue nile multiple jewerly landing pages
     Given I navigate to Blue Nile homepage

@@ -1,16 +1,12 @@
-import { Given, When, Then, And } from "cucumber";
-// const request = require('supertest');
-import {request} from "supertest";
+import { Given, When, Then } from "cucumber";
 import { calculator } from "../PageObjects/calculator";
 import { HomePage } from "../PageObjects/homePage";
 import { browser, element, by } from "protractor";
 import { expect } from "chai";
 // var expect = require('chai').expect;
 
-
 let calc = new calculator();
 let home = new HomePage();
-
 Given('I navigate to calculator angularjs website', async () => {
     await browser.get('http://juliemr.github.io/protractor-demo/');
     
@@ -38,7 +34,7 @@ Given ('I navigate to Blue Nile homepage', async()=> {
 
     await element(by.css('div.icon-component.close')).click();
 
-})
+});
 
 When ('I select {string} in {string}', async(string, string2)=> {
     // await home.diamonds.click();
@@ -46,7 +42,7 @@ When ('I select {string} in {string}', async(string, string2)=> {
     await element(by.xpath(`//span[text()= "${string}"]`)).click();
     await element(by.xpath(`//span[text()= "${string2}"]`)).click();
 
-})
+});
 
 Then ('I should see the {string} landing page', async(string)=> {
     // await element(by.css(`div.icon-component.close`)).click(); //closes modal on diamonds - round
@@ -55,35 +51,5 @@ Then ('I should see the {string} landing page', async(string)=> {
 });
 
 
-//******FOR API DEMO******\\
-Given('I Set POST employee service api endpoint$', async() =>{
-    let addURI = "http://dummy.restapiexample.com/api/v1/create";
-    console.log('Add URL ' + addURI);
-});
-
-When('I Set request HEADER', async() =>{
-    request('http://dummy.restapiexample.com/api/v1/create')
-    .set('/create');
-});
-
-And('Send a POST HTTP request', async()=>[
-
-]);
-
-Then('I receive valid Response', async()=>{
-
-});
-
-Given('I set PUT employee sevice api endpoint', async() =>{
-
-});
-
-When('I set Update request Body', async()=>{
-
-});
-
-And('Send PUT HTTP request', async()=>{
-
-});
 
 

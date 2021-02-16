@@ -1,4 +1,4 @@
-import { report } from "process";
+import { features, report } from "process";
 import { Config } from "protractor";
 import reporter from "cucumber-html-reporter";
 
@@ -13,7 +13,8 @@ export let config: Config = {
     capabilities: {
         browserName: 'chrome'
     },
-    specs: ['../features/e2e/bluenile.feature'],
+    specs: ['../features/e2e/BNhomePage.feature'],
+    // specs: ['../features/api/employee_api.feature'],
     cucumberOpts: {
         format: 'json:./cucumber-json-report.json',
 
