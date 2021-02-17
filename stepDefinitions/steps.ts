@@ -26,7 +26,7 @@ Then('The total should be {string}', async (string) => {
 });
 
 //****Blue Nile****\\
-Given ('I navigate to Blue Nile homepage', async()=> {
+Given ('The user navigates to Blue Nile homepage', async()=> {
     browser.ignoreSynchronization = true;
     await browser.get('https://www.bluenile.com');
     await browser.manage().window().maximize();
@@ -36,7 +36,7 @@ Given ('I navigate to Blue Nile homepage', async()=> {
 
 });
 
-When ('I select {string} in {string}', async(string, string2)=> {
+When ('The user selects {string} in {string}', async(string, string2)=> {
     // await home.diamonds.click();
     // await home.roundShape.click();
     await element(by.xpath(`//span[text()= "${string}"]`)).click();
@@ -44,7 +44,7 @@ When ('I select {string} in {string}', async(string, string2)=> {
 
 });
 
-Then ('I should see the {string} landing page', async(string)=> {
+Then ('The user sees the {string} landing page', async(string)=> {
     // await element(by.css(`div.icon-component.close`)).click(); //closes modal on diamonds - round
     let text = await element(by.xpath(`//span[text() = "${string}"]`)).getText();
     expect(text).to.equal(string);

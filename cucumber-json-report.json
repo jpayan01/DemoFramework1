@@ -1,100 +1,23 @@
 [
   {
     "keyword": "Feature",
-    "name": "Blue Nile HompePage Demo",
+    "name": "Blue Nile Demo",
     "line": 1,
-    "id": "blue-nile-hompepage-demo",
+    "id": "blue-nile-demo",
     "tags": [],
-    "uri": "features\\e2e\\BNhomePage.feature",
+    "uri": "features\\sampleFeature1\\feature1.feature",
     "elements": [
       {
-        "id": "blue-nile-hompepage-demo;navigate-to-blue-nile-diamond-page",
+        "id": "blue-nile-demo;navigate-to-blue-nile-diamond-page",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 4,
         "name": "Navigate to blue nile Diamond page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
+        "tags": [
           {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "stepDefinitions\\hooks.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 60000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I navigate to Blue Nile homepage",
-            "match": {
-              "location": "stepDefinitions\\steps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6720000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I select \"Diamonds\" in \"Round\"",
-            "match": {
-              "location": "stepDefinitions\\steps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2279000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "I should see the \"Round Cut Diamonds\" landing page",
-            "match": {
-              "location": "stepDefinitions\\steps.ts:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1312000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "stepDefinitions\\hooks.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 111000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
+            "name": "@UI",
+            "line": 3
           }
-        ]
-      },
-      {
-        "id": "blue-nile-hompepage-demo;navigate-to-blue-nile-multiple-jewerly-landing-pages",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Navigate to blue nile multiple jewerly landing pages",
-        "tags": [],
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -105,46 +28,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375000000
+              "duration": 38000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "I navigate to Blue Nile homepage",
+            "line": 5,
+            "name": "The user navigates to Blue Nile homepage",
             "match": {
               "location": "stepDefinitions\\steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 6697000000
+              "duration": 8443000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
-            "name": "I select \"Diamonds\" in \"Round\"",
+            "line": 6,
+            "name": "The user selects \"Diamonds\" in \"Round\"",
             "match": {
               "location": "stepDefinitions\\steps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1811000000
+              "duration": 2518000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "I should see the \"Round Cut Diamonds\" landing page",
+            "line": 7,
+            "name": "The user sees the \"Round Cut Diamonds\" landing page",
             "match": {
               "location": "stepDefinitions\\steps.ts:47"
             },
             "result": {
               "status": "passed",
-              "duration": 952000000
+              "duration": 1419000000
             }
           },
           {
@@ -155,7 +78,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 174000000
             }
           },
           {
@@ -172,7 +95,7 @@
         ]
       },
       {
-        "id": "blue-nile-hompepage-demo;navigate-to-blue-nile-multiple-jewerly-landing-pages",
+        "id": "blue-nile-demo;navigate-to-blue-nile-multiple-jewerly-landing-pages",
         "keyword": "Scenario",
         "line": 16,
         "name": "Navigate to blue nile multiple jewerly landing pages",
@@ -187,46 +110,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 538000000
+              "duration": 393000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "I navigate to Blue Nile homepage",
+            "line": 10,
+            "name": "The user navigates to Blue Nile homepage",
             "match": {
               "location": "stepDefinitions\\steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 5026000000
+              "duration": 5180000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
-            "name": "I select \"Diamonds\" in \"Princess\"",
+            "line": 11,
+            "name": "The user selects \"Diamonds\" in \"Round\"",
             "match": {
               "location": "stepDefinitions\\steps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 2400000000
+              "duration": 1530000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "I should see the \"Princess Cut Diamonds\" landing page",
+            "line": 12,
+            "name": "The user sees the \"Round Cut Diamonds\" landing page",
             "match": {
               "location": "stepDefinitions\\steps.ts:47"
             },
             "result": {
               "status": "passed",
-              "duration": 944000000
+              "duration": 908000000
             }
           },
           {
@@ -254,7 +177,7 @@
         ]
       },
       {
-        "id": "blue-nile-hompepage-demo;navigate-to-blue-nile-multiple-jewerly-landing-pages",
+        "id": "blue-nile-demo;navigate-to-blue-nile-multiple-jewerly-landing-pages",
         "keyword": "Scenario",
         "line": 17,
         "name": "Navigate to blue nile multiple jewerly landing pages",
@@ -269,46 +192,202 @@
             },
             "result": {
               "status": "passed",
-              "duration": 475000000
+              "duration": 288000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "I navigate to Blue Nile homepage",
+            "line": 10,
+            "name": "The user navigates to Blue Nile homepage",
             "match": {
               "location": "stepDefinitions\\steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 4935000000
+              "duration": 5136000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+            "line": 11,
+            "name": "The user selects \"Diamonds\" in \"Princess\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2415000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "The user sees the \"Princess Cut Diamonds\" landing page",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1028000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "blue-nile-demo;navigate-to-blue-nile-multiple-jewerly-landing-pages",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Navigate to blue nile multiple jewerly landing pages",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 539000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
             "line": 10,
-            "name": "I select \"Diamonds\" in \"Cushion1\"",
+            "name": "The user navigates to Blue Nile homepage",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5065000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The user selects \"Diamonds\" in \"Cushion1\"",
             "match": {
               "location": "stepDefinitions\\steps.ts:39"
             },
             "result": {
               "status": "failed",
-              "duration": 1046000000,
+              "duration": 923000000,
               "error_message": "NoSuchElementError: No element found using locator: By(xpath, //span[text()= \"Cushion1\"])\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\node_modules\\protractor\\built\\element.js:831:22)\n    at C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\stepDefinitions\\steps.ts:43:61\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\joel.payan\\Desktop\\BlueNileDemo\\DemoFramework1\\JSFiles\\stepDefinitions\\steps.js:5:58)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "I should see the \"Cushion Cut Diamonds\" landing page",
+            "line": 12,
+            "name": "The user sees the \"Cushion Cut Diamonds\" landing page",
             "match": {
               "location": "stepDefinitions\\steps.ts:47"
             },
             "result": {
               "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "blue-nile-demo;add-employee-record",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Add Employee record",
+        "tags": [
+          {
+            "name": "@API",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I set a POST request to employee service api endpoint",
+            "match": {
+              "location": "stepDefinitions\\apiSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I send a POST HTTP request",
+            "match": {
+              "location": "stepDefinitions\\apiSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 573000000
             }
           },
           {

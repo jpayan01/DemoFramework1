@@ -13,7 +13,7 @@ export let config: Config = {
     capabilities: {
         browserName: 'chrome'
     },
-    specs: ['../features/e2e/BNhomePage.feature'],
+    specs: ['../features/sampleFeature1/feature1.feature'],
     // specs: ['../features/api/employee_api.feature'],
     cucumberOpts: {
         format: 'json:./cucumber-json-report.json',
