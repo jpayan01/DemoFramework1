@@ -17,7 +17,7 @@ export let config: Config = {
     // specs: ['../features/api/employee_api.feature'],
     cucumberOpts: {
         format: 'json:./cucumber-json-report.json',
-
+        // tags: '@API',
         require: [
             './stepDefinitions/*.js'
         ]

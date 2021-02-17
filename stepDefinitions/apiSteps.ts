@@ -22,13 +22,9 @@ When('I send a POST HTTP request', function(response) {
     
 });
 
-// And('Send a POST HTTP request', async()=>{
-//     console.log('executing step now...');
-// });
-
-// Then('I receive valid Response', async()=>{
-//     console.log('executing `Then` step...');
-// });
+Then('I receive valid Response', async()=>{
+    console.log('executing `Then` step...');
+});
 
 // Given('I set PUT employee sevice api endpoint', async() =>{
 

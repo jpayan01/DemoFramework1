@@ -1,3 +1,4 @@
+@Regression
 Feature: Blue Nile Demo
 
 @UI
@@ -6,6 +7,7 @@ Scenario: Navigate to blue nile Diamond page
     When The user selects "Diamonds" in "Round"
     Then The user sees the "Round Cut Diamonds" landing page
 
+@UI
 Scenario Outline: Navigate to blue nile multiple jewerly landing pages
     Given The user navigates to Blue Nile homepage
     When The user selects "<Type>" in "<Shape>"
@@ -21,3 +23,4 @@ Examples:
 Scenario: Add Employee record
     Given I set a POST request to employee service api endpoint
     When I send a POST HTTP request
+    Then I receive valid Response
